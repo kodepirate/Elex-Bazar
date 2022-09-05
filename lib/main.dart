@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key); //Constructor
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { // build method is a return type of Widget
     
 
 
