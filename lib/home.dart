@@ -8,10 +8,14 @@ class HomePage extends StatelessWidget {
     final int days = 30;
 
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("Electrojar"),
+    
+      ),
       body : Center(
         child: Text( 'Hello World $days'), // The $ sign is known as string interpolation
       ),
+      drawer: Drawer(),
     );
   }
 }
