@@ -1,4 +1,4 @@
-import 'package:electrojar/home.dart';
+import 'package:electrojar/pages/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
