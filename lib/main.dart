@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) { // build method is a return type of Widget
+  //build is a function which returns a Widget
     
 
 
