@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Electrojar"),
+        title: Text("Electrojar Home"),
     
       ),
       body : Center(
