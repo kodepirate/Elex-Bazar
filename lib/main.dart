@@ -1,6 +1,7 @@
 import 'dart:js';
 
 import 'package:electrojar/pages/home.dart';
+import 'package:electrojar/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -27,7 +28,8 @@ class MyApp extends StatelessWidget {
       //   brightness: Brightness.dark,
       // ),
       routes:{
-        "/" : (context) => HomePage(),
+        "/" : (context) => LoginPage(),
+        "/login" : (context) => LoginPage(),
       },
       
     );
