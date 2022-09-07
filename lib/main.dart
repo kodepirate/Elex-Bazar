@@ -16,6 +16,11 @@ class MyApp extends StatelessWidget {
     
     return  MaterialApp(
       home: HomePage(),
+      // themeMode: ThemeMode.dark, 
+      // darkTheme: ThemeData(
+      //   brightness: Brightness.dark,
+      // ),
+      
     );
 }
-}
+} 
