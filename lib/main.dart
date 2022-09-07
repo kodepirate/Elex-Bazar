@@ -24,7 +24,9 @@ class MyApp extends StatelessWidget {
       // darkTheme: ThemeData(
       //   brightness: Brightness.dark,
       // ),
-      routes:,
+      routes:{
+        "/"
+      },
       
     );
 }
