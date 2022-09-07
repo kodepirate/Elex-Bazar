@@ -32,8 +32,8 @@ class MyApp extends StatelessWidget {
       // initialRoute: "/home", //This is the default route
       routes:{
         "/" : (context) =>  LoginPage(),
-        MyRoutes.homeRoute : (context) => HomePage(),
-        MyRoutes.loginRoute : (context) => LoginPage(),
+        MyRoutes.homeRoute : (context) => const HomePage(),
+        MyRoutes.loginRoute : (context) => const LoginPage(),
       },
       
     );
