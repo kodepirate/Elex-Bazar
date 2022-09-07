@@ -1,3 +1,5 @@
+import 'dart:js';
+
 import 'package:electrojar/pages/home.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
    //Required parameter is denoted by []
     
     return  MaterialApp(
-      home: HomePage(),
+      // home: HomePage(),
       themeMode: ThemeMode.light,
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
       //   brightness: Brightness.dark,
       // ),
       routes:{
-        "/"
+        "/" : (context) => HomePage(),
       },
       
     );
