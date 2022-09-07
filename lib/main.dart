@@ -1,4 +1,5 @@
 import 'dart:js';
+import 'package:electrojar/utils/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:electrojar/pages/home.dart';
 import 'package:electrojar/pages/login_page.dart';
@@ -28,11 +29,11 @@ class MyApp extends StatelessWidget {
       // darkTheme: ThemeData(
       //   brightness: Brightness.dark,
       // ),
-      // initialRoute: "/home", 
+      // initialRoute: "/home", //This is the default route
       routes:{
         "/" : (context) =>  LoginPage(),
-        "/home" : (context) => HomePage(),
-        "/login" : (context) => LoginPage(),
+        MyRoutes.homeRoute : (context) => HomePage(),
+        MyRoutes.loginRoute : (context) => LoginPage(),
       },
       
     );
