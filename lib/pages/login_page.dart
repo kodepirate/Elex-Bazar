@@ -56,12 +56,12 @@ class _LoginPageState extends State<LoginPage> {
                       height: 50.0,
                     ),
                     InkWell(
-                      onTap: () {
+                      onTap: () async {
                         setState(() {
                           changeButton = true;
                         });
-                        // await Future.delayed(Duration(seconds: 1));
-                        // Navigator.pushNamed(context, MyRoutes.homeRoute);
+                        await Future.delayed(Duration(seconds: 1));
+                        Navigator.pushNamed(context, MyRoutes.homeRoute);
                       },
                       child:AnimatedContainer(
                         duration: Duration(seconds: 1),
@@ -69,7 +69,10 @@ class _LoginPageState extends State<LoginPage> {
                         height: 40,
                         alignment: Alignment.center,
                         
-                        child: Text(
+                        child:changeButton?Icon(
+                          Icons.done,
+                          color: Colors.white,
+                        ): Text(
                           "Login",
                           style: TextStyle(
                             color: Colors.white,
