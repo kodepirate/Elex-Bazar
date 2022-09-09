@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
    //Required parameter is denoted by []
     
     return  MaterialApp(
+      debugShowCheckedModeBanner: true,
       // home: HomePage(),
       // themeMode: ThemeMode.light,
       theme: ThemeData(
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         fontFamily: GoogleFonts.lato().fontFamily,
       ),
       // themeMode: ThemeMode.dark, 
-      // darkTheme: ThemeData(
+      // darkTheme: ThemeData(  
       //   brightness: Brightness.dark,
       // ),
       // initialRoute: "/login", //This is the default route
