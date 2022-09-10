@@ -24,6 +24,7 @@ class _LoginPageState extends State<LoginPage> {
       });
     }
   }
+  
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +62,7 @@ class _LoginPageState extends State<LoginPage> {
                           }
                           return null;
                         },
-                        onChanged: (value) {
+                        onChanged:  (value) {
                           name = value;
                           setState(() {});
                         },
@@ -89,17 +90,7 @@ class _LoginPageState extends State<LoginPage> {
                         borderRadius:
                             BorderRadius.circular(changeButton ? 20 : 15),
                         child: InkWell(
-                          onTap: () async {
-                            setState(() {
-                              changeButton = true;
-                            });
-                            await Future.delayed(Duration(seconds: 1));
-                            await Navigator.pushNamed(
-                                context, MyRoutes.homeRoute);
-                            setState(() {
-                              changeButton = false;
-                            });
-                          },
+                          onTap: () => MoveToHome(context),
                           child: AnimatedContainer(
                             duration: Duration(seconds: 1),
                             width: changeButton ? 65 : 150,
