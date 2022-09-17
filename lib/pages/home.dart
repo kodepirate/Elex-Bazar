@@ -1,3 +1,4 @@
+import 'package:electrojar/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -15,7 +16,7 @@ class HomePage extends StatelessWidget {
       body : Center(
         child: Text( 'Hello World $days'), // The $ sign is known as string interpolation
       ),
-      drawer: Drawer(),
+      drawer: Mydrawer(),
     );
   }
 }

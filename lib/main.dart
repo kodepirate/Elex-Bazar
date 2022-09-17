@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
    //Required parameter is denoted by []
     
     return  MaterialApp(
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       // home: HomePage(),
       // themeMode: ThemeMode.light,
       theme: ThemeData(
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       // darkTheme: ThemeData(  
       //   brightness: Brightness.dark,
       // ),
-      // initialRoute: "/login", //This is the default route
+      initialRoute: MyRoutes.homeRoute , //This is the default route
       routes:{
         "/" : (context) =>  LoginPage(),
         MyRoutes.homeRoute: (context) =>  HomePage(),
