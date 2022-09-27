@@ -13,7 +13,7 @@ class _LoginPageState extends State<LoginPage> {
   bool changeButton = false;
   final _formKey = GlobalKey<FormState>();
   MoveToHome(BuildContext context) async {
-    if (_formKey.currentState!.validate()) {
+    if (_formKey.currentState!.validate()) { // It will check if the form is valid or not
       setState(() {
         changeButton = true;
       });
